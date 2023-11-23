@@ -1,0 +1,44 @@
+Class Airline 
+Data Member Airline name = String
+list of flights= vector or linked lists
+number of flights = int 
+other
+
+member functions: 
+getters and setters
+ctor copy ctor destructors
+
+
+Class Flight
+Data members 
+Flight id: string
+Number of rows in a flight: int
+Number of columns: int
+list of Passengers: vector
+seat map: vector of vectors or matrix
+other
+Member functions 
+getters and setters
+ctor copy ctor destructors
+
+
+Class Passenger
+Data Member
+
+Passenger ID : int
+Name : string
+Phone number: string
+Passenger seat: Pointer pointing to the seat map matrix 
+other
+Member functions
+ getters and setters
+ctor copy ctor destructors
+
+Class Seat
+Data member 
+seat's Row nummber int
+Seat's column number int
+seat's status : can use numbers 1/0 
+
+getters and setters
+ctor copy ctor destructors
