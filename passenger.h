@@ -1,5 +1,9 @@
+#ifndef PASSENGER_H
+#define PASSENGER_H
 #include <iomanip>
-#include "airline.cpp"
+#include <string>
+#include "seat.cpp"
+
 
 
 
@@ -78,3 +82,4 @@ class Passenger {
 
 };
 
+#endif

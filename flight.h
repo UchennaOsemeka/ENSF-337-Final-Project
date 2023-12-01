@@ -1,4 +1,8 @@
+#ifndef FLIGHT_H
+#define FLIGHT_H
 #include "passenger.cpp"
+#include <vector>
+
 
 
 
@@ -71,3 +75,4 @@ class Flight {
         void saveData();
 };
 
+#endif

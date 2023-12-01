@@ -1,4 +1,4 @@
-#include "flight.cpp"
+#include "airline.cpp"
 
 
 
@@ -196,10 +196,20 @@ bool menu(Flight& currentFlight) {
 
 
 int main() {
+    // airline usage:
+    Airline thisairline;
+    vector <Flight> flightlist;
+    thisairline.setFlight(&flightlist);
     Flight thisflight;
 
+
+    //populate thisflight
     thisflight.populate_flight_from_file("flight_info.txt");
-    
+    //adding thisflight to thisairline
+    thisairline.addFlight(thisflight);
+
+    // cout<< "AIRLINE CHECK" << thisairline.getFlights()->at(0).getID()<<endl; //airline check
+
     display_header();
     returnToContinue();
 

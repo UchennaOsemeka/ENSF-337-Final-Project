@@ -5,11 +5,11 @@
 
 
 Airline::Airline() : 
-    name(""), numOfFlights(0), flights(new vector <string>) {}
+    name(""), numOfFlights(0), flights(new vector <Flight>) {}
 
 
 Airline::Airline(const Airline& rhs) : 
-    name(rhs.name), numOfFlights(rhs.numOfFlights), flights(new vector <string> (*rhs.flights)) {}
+    name(rhs.name), numOfFlights(rhs.numOfFlights), flights(new vector <Flight> (*rhs.flights)) {}
 
 
 Airline::~Airline() {
@@ -27,8 +27,8 @@ int Airline::getNumOfFlights() const {
 }
 
 
-vector<string> Airline::getFlights() const {
-    return *flights;
+vector<Flight>* Airline::getFlights() const {
+    return flights;
 }
 
 
@@ -42,17 +42,15 @@ void Airline::setNumOfFlights(int val) {
 }
 
 
-void Airline::addFlight(string val) {
+void Airline::setFlight(vector<Flight>* val) {
+    flights = val;
+}
+
+
+
+void Airline::addFlight(Flight val) {
     flights->push_back(val);
     ++numOfFlights;
 }
 
-
-void Airline::delFlight(string val) {
-    auto itr = find(flights->begin(), flights->end(), val);
-    if (itr != flights->end()) {
-        flights->erase(itr);
-        --numOfFlights;
-    }
-}
 

@@ -1,6 +1,8 @@
+#ifndef AIRLINE_H
+#define AIRLINE_H
 #include <string>
 #include <vector>
-#include "seat.cpp"
+#include "flight.cpp"
 
 
 
@@ -9,11 +11,11 @@ class Airline {
     private:
         string name;
         int numOfFlights;
-        vector<string>* flights;
+        vector<Flight>* flights;
 
     public:
         //ctor
-        Airline();
+        Airline() ;
 
         //copy-ctor
         Airline(const Airline& rhs);
@@ -26,16 +28,17 @@ class Airline {
 
         int getNumOfFlights() const;
 
-        vector<string> getFlights() const;
+        vector<Flight>* getFlights() const;
 
         //setters
         void setName(string val);
 
         void setNumOfFlights(int val);
 
-        void addFlight(string val);
+        void setFlight(vector<Flight>* val);
 
-        void delFlight(string val);
+        void addFlight(Flight val);
 
 };
 
+#endif

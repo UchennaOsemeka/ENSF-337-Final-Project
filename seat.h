@@ -1,4 +1,5 @@
-
+#ifndef SEAT_H
+#define SEAT_H
 
 
 
@@ -53,3 +54,4 @@ class Seat {
 
 };
 
+#endif
