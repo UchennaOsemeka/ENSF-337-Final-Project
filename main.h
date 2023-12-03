@@ -1,3 +1,6 @@
+// File: main.h
+// ENSF 337 Final Project
+
 #include "flight.h"
 
 
