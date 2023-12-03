@@ -1,3 +1,6 @@
+// File: main.cpp
+// ENSF 337 Final Project
+// By: Wilson Zheng
 #include "airline.cpp"
 
 
