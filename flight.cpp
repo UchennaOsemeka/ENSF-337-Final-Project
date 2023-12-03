@@ -1,6 +1,3 @@
-// File: main.cpp
-// ENSF 337 Final Project
-
 #include "main.h"
 #include <limits>
 #include <fstream>
@@ -139,12 +136,9 @@ void Flight::menuCreatePass() {
         }
 
         if ((*seating)[newRow - 1][newCol - 'A'].getAvailability() == false) {
-            cout << "Error, this seat is already occupied or doesn't exist.\n";
+            cout << "Error, this seat is already occupied or does not exist.\n";
             return;
         }
-		
-		
-    
 
         newPass.setID(newID);
         newPass.setFname(newFname);
@@ -302,6 +296,6 @@ void Flight::saveData() {
     }
 
     file.close();
-    cout << "\n Sucessfully saved to file \'" << save_file_name << "\'.\n";
+    cout << "\n Successfully saved to file \'" << save_file_name << "\'.\n";
 }
 
