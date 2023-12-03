@@ -139,13 +139,11 @@ void Flight::menuCreatePass() {
         }
 
         if ((*seating)[newRow - 1][newCol - 'A'].getAvailability() == false) {
-            cout << "Error, this seat is already occupied.\n";
+            cout << "Error, this seat is already occupied or doesn't exist.\n";
             return;
         }
 		
-		if (newRow <= 0 || newRow > rows || newCol < 'A' || newCol > 'A' + cols - 1) {
-        cout << "Error, this seat doesn't exist.\n";
-        return;
+		
     }
 
         newPass.setID(newID);
