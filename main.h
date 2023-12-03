@@ -1,7 +1,27 @@
-// File: main.h
-// ENSF 337 Final Project
+// ENSF337 Final Project
+// main.h
+
 
 #include "flight.h"
+#include "seat.h"
+
+#ifndef STRING_L
+#define STRING_L
+#include <string>
+using namespace std;
+#endif
+
+#ifndef VECTOR_L
+#define VECTOR_L
+#include <vector>
+using namespace std;
+#endif
+
+
+
+
+#ifndef MAIN_H
+#define MAIN_H
 
 
 
@@ -25,3 +45,6 @@ void displayPassInfo(Flight& flight);
 
 
 bool menu(Flight& currentFlight);
+
+#endif
+

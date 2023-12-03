@@ -1,14 +1,17 @@
-// File: main.cpp
-// ENSF 337 Final Project
+// ENSF337 Final Project
+// main.cpp
 
-#include "airline.cpp"
+// ---to compile---
+// g++ -Wall -o main airline.cpp flight.cpp main.cpp seat.cpp passenger.cpp
+
+// then run main.exe 
+
+
+#include "main.h"
+#include "airline.h"
 
 
 
-
-
-// VVV to compile VVV
-// g++ -Wall -o main main.cpp
 
 string formatReading(const string& line) {
     string result = line;

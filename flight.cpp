@@ -1,6 +1,9 @@
+// ENSF337 Final Project
+// flight.cpp
+
+
+#include "flight.h"
 #include "main.h"
-#include <limits>
-#include <fstream>
 
 
 
@@ -111,6 +114,7 @@ void Flight::menuCreatePass() {
         cin.ignore(numeric_limits<streamsize>::max(), '\n');
     }
     newCol = toupper(newCol);
+    int intNewCol = newCol-'A';
 
 
     cout<< "\nConfirm addition of this passenger?" 
@@ -135,10 +139,17 @@ void Flight::menuCreatePass() {
             }
         }
 
-        if ((*seating)[newRow - 1][newCol - 'A'].getAvailability() == false) {
-            cout << "Error, this seat is already occupied or does not exist.\n";
+        if (newRow < 0 || newRow - 1 > (int) seating->size() || intNewCol < 0 || intNewCol > (int) (*seating)[0].size()) {
+            cout << "Error, this seat does not exist.\n";
             return;
         }
+
+        if (((*seating)[newRow - 1][intNewCol].getAvailability() == false)) {
+            cout << "Error, this seat is already occupied.\n";
+            return;
+        }
+
+        
 
         newPass.setID(newID);
         newPass.setFname(newFname);
@@ -296,6 +307,6 @@ void Flight::saveData() {
     }
 
     file.close();
-    cout << "\n Successfully saved to file \'" << save_file_name << "\'.\n";
+    cout << "\n Sucessfully saved to file \'" << save_file_name << "\'.\n";
 }
 

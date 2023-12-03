@@ -1,9 +1,31 @@
+// ENSF337 Final Project
+// passenger.h
+
+
+#include "seat.h"
+
+#ifndef IOMANIP_L
+#define IOMANIP_L
+#include <iomanip>
+using namespace std;
+#endif
+
+#ifndef STRING_L
+#define STRING_L
+#include <string>
+using namespace std;
+#endif
+
+#ifndef IOSTREAM_L
+#define IOSTREAM_L
+#include <iostream>
+using namespace std;
+#endif
+
+
+
 #ifndef PASSENGER_H
 #define PASSENGER_H
-#include <iomanip>
-#include <string>
-#include "seat.cpp"
-
 
 
 

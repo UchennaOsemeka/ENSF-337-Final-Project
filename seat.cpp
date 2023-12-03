@@ -1,6 +1,8 @@
+// ENSF337 Final Project
+// seat.cpp
+
+
 #include "seat.h"
-#include <iostream>
-using namespace std;
 
 
 
