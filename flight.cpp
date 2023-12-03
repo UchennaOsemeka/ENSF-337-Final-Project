@@ -144,7 +144,7 @@ void Flight::menuCreatePass() {
         }
 		
 		
-    }
+    
 
         newPass.setID(newID);
         newPass.setFname(newFname);
