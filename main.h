@@ -1,3 +1,6 @@
+// File: main.h
+// ENSF 337 Final Project
+// By: Wilson Zheng
 #include "flight.h"
 
 
